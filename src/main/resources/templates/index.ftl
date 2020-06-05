@@ -11,6 +11,8 @@
 <a class="changeLang" href="javascript:;">English</a><br/>
 <a class="changeLang" href="javascript:;">中文</a><br/>
 <@spring.message code="user.loginname"/><br/>
+<br/>
+是目录文件夹messages下的messages文件,也就是配置文件application.properties里的spring.messages.basename=messages/messages
 </body>
 <script src="${request.contextPath}/static/jquery.js"></script>
 <script>
