@@ -1,4 +1,4 @@
-package com.fwtai;
+package com.fwtai.config;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import java.util.Locale;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
-public class MainConfig extends WebMvcConfigurationSupport{
+public class I18nConfig extends WebMvcConfigurationSupport{
 
     @Bean
     public LocaleResolver localeResolver(){
@@ -30,7 +30,7 @@ public class MainConfig extends WebMvcConfigurationSupport{
     public LocaleChangeInterceptor localeChangeInterceptor(){
         final LocaleChangeInterceptor locale = new LocaleChangeInterceptor();
         // 参数名
-        locale.setParamName("_lang");
+        locale.setParamName("language");
         return locale;
     }
 

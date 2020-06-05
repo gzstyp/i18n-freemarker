@@ -7,7 +7,7 @@
     <version>v1.0.0</version>
     <packaging>jar</packaging>
 
-    <description>Demo project for Spring Boot</description>
+    <description>Spring Boot 国际化示例代码freemarker版本 </description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
